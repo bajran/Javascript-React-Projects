@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" type="module" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h5 class="heading">GUESS THE NUMBER IN JS</h5>
+    <hr/>
+    <div class="container text-center">
+      <form id="form" class="input-container">
+        <label for="input">Enter a guess between 0 to 100</label><br /><br />
+        <input
+          type="number"
+          id="input"
+          placeholder="Enter a number"
+          autocomplete="off"
+          min="0"
+          max="100"
+          required
+          autofocus
+        />
+
+        <div>
+          <input type="submit" id="submit" class="btn btn-primary" value="Submit" />
+          <button type="button" id="startGame" class="btn btn-primary" disabled>Start Game</button>
+        </div>
+
+        <div>
+          <p><output id="output"></output></p>
+          <p><output id="guessDisplay"></output></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
