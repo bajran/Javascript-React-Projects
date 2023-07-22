@@ -1,0 +1,25 @@
+@import url('../helper/core.css');
+
+.container{
+    transition: 0.2s;
+}
+
+.inner-container{
+    margin: 1rem;
+    padding: 2.5%;
+    border: 1px solid blue;
+}
+
+body.dark,
+#innnerThemeSwitch:checked + .inner-container,
+#innnerThemeSwitch:checked ~ .most-inner,
+body.dark #innnerThemeSwitch:checked + .inner-container {
+  color: canvas;
+  background-color: canvasText;
+}
+
+#innnerThemeSwitch + .inner-container,
+body.dark #innnerThemeSwitch + .inner-container {
+  color: red;
+  background-color: green;
+}
